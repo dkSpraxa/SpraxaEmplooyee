@@ -12,9 +12,9 @@ const Profile = () => {
   return (
     <Box width="90%" margin="100px auto" >
       <Grid container>
-      <Grid item xs={4}>
+      <Grid item xs={12} md={4}>
           <Paper elevation={3}>
-          <Stack alignItems="center" spacing={2} padding={4} height="50hv">
+          <Stack alignItems="center" spacing={2} padding={4} height="40vh">
           <Avatar
                 src={`http://localhost:8080/images/${
                   user.profile
@@ -28,9 +28,9 @@ const Profile = () => {
           </Stack>
           </Paper>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item xs={12} md={8}>
           <Paper elevation={3}>
-          <Stack spacing={4} justifyContent="center" padding={8} height="50hv" >
+          <Stack spacing={4} justifyContent="center" padding={4} height="40vh" >
             <Stack direction="row" spacing={6} justifyContent="space-between" alignItems="center">
               <Typography>Full Name:</Typography>
               <Typography fontFamily="cursive">{user.name}</Typography>
