@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+}
+
+@media screen and (max-width:500px) {
+  #list-title{
+    display: none;
+  }
+}
+
+@media screen and (max-width:770px) {
+  #loginBox{
+    width: 100%;
+  }
+  #loginBox>div{
+    margin: 12px;
+  }
+  #tableBox{
+    width: 90%;
+    padding: 10px;
+  }
+  #loginUserBox>p{
+    display: none;;
+  }
+  #gridBox{
+    margin: 10px;
+  }
+  #adduserBox{
+    width: 100%;
+  }
+  #main-img{
+    display: none;
+  }
+  #form-title{
+    font-size: 40px;
+  }
+  #signup-title{
+    font-size: 30px;
+  }
+}
