@@ -55,7 +55,7 @@ exports.userLogin = catchAsyncError(async (req, res, next) => {
   });
 });
 
-// get all users
+// get all users 
 exports.getAllusers = catchAsyncError(async (req, res, next) => {
 
   const page = parseInt(req.query.page)
@@ -73,7 +73,9 @@ exports.getAllusers = catchAsyncError(async (req, res, next) => {
   });
 });
 
-//edit users profile
+
+
+//edit users profile -- admin
 
 exports.editUserProfile = catchAsyncError(async (req, res, next) => {
   const newUserData = {
@@ -169,7 +171,9 @@ exports.updatePassword = catchAsyncError(async (req, res, next) => {
   });
 });
 
-//user delete
+
+
+//user delete -- admin
 
 exports.deleteUser = catchAsyncError(async (req, res, next) => {
   const user = await userSchema.findById(req.params.id);
@@ -200,6 +204,7 @@ exports.deleteUser = catchAsyncError(async (req, res, next) => {
     user,
   });
 });
+
 
 //upload user picture
 
